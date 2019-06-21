@@ -33,7 +33,7 @@ Func Search($current,$ext)
         If Not StringInStr(FileGetAttrib($current & "\" & $file), "D") And ($file <> "." Or $file <> "..") Then
 
             If StringInStr($current & "\" & $file, $ext) then
-               FileCopy( $current & "\" & $file,$letter & "\" & @ComputerName,8) ;Daten werden auf Stick kopiert.
+               FileCopy( $current & "\" & $file,$letter & "\" & @ComputerName & "\" & $file ,8) ;Daten werden auf Stick kopiert.
             Endif
         EndIf
         If StringInStr(FileGetAttrib($current & "\" & $file), "D") And ($file <> "." Or $file <> "..") Then
