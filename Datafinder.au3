@@ -7,6 +7,10 @@
 Global $path = @DesktopDir          ;Pfad festlegen in dem gesucht werden soll Unterordner sind eingschlossen
 Global $search = "geheim"           ;Schlüsselwort oder Endung nach der Gesucht werden soll
 
+					; Für weiter suchen
+Global $path2 = @DesktopDir          ;Pfad festlegen in dem gesucht werden soll Unterordner sind eingschlossen
+Global $search2 = ".mp4"           ;Schlüsselwort oder Endung nach der Gesucht werden soll
+
 
 
 $var = DriveGetDrive("REMOVABLE")   ;erkennen eines USB-Sticks
@@ -21,6 +25,7 @@ If Not @error Then
 
 
 Search($path, $search) ;Suche
+Search($path2, $search2) ;Für 2te Suche
 
 
 
