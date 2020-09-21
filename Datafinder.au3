@@ -7,7 +7,7 @@
 Global $path = @DesktopDir          ;Pfad festlegen in dem gesucht werden soll Unterordner sind eingschlossen
 Global $search = "geheim"           ;Schlüsselwort oder Endung nach der Gesucht werden soll
 
-					; Für weiter suchen
+					; Für weitere suchen
 Global $path2 = @DesktopDir          ;Pfad festlegen in dem gesucht werden soll Unterordner sind eingschlossen
 Global $search2 = ".mp4"           ;Schlüsselwort oder Endung nach der Gesucht werden soll
 
